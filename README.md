@@ -7,6 +7,7 @@ Description: Return a string that says "Hello World".
 ## Problem 2: Sum of Two Integers
 
 Description: Calculate the sum of two integers "a" and "b".
+<small>This text is smaller.</small>
 
 ## Problem 3: Add Item to Inventory
 
