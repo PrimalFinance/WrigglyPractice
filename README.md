@@ -90,40 +90,102 @@
 
 ## Problem 23: Build Token Two
 
-<small>Description: Implement the ERC-20's "\_mint()", "\_burn()", and "getBalance()" functions. </small>
+<small>Description: Implement the ERC-20's "mint()", "burn()", and "getBalance()" functions. </small>
 
-## Problem :
+## Problem 24: Key Pair
 
-<small>Description: </small>
+<small>Description: Create functions that are able to create a private, and public key pair. </small>
 
-## Problem :
+## Problem 25: Convert Ether
 
-<small>Description: </small>
+<small>Description: Write a function that can convert an amount of Ether to Wei(smallest unit of Ether), and a function that can convert Wei to Ether.
 
-## Problem :
+Example: 0.5 Ether -> 500000000000000000 Wei
+500000000000000000 Wei -> 0.5 Ether</small>
 
-<small>Description: </small>
+## Problem 26: Modular Arithmetic
 
-## Problem :
+<small>Description: Implement the "addMod()" and "mulMod()" functions. Write custom methods called "callAddMod" that implements "addMod()" and another custom method called "callMulMod()", that implements "mulMod()". </small>
 
-<small>Description: </small>
+## Problem 27: Transfer to Authorized Users
 
-## Problem :
+<small>Description: Write a smart contract for a new token on the Ethereum network. The contract should allow for the transfer of tokens between "authorizedUsers", with the ability to add or remove "authorizedUsers" from the system.
+The token contract should have the following features.
 
-<small>Description: </small>
+- A mapping that stores the balance of each user in the system.
+- A constructor that adds the creator of the contract as an authorized users.
+- An array to store the addresses of "authorizedUsers".
+- A modifier that ensures only "authorizedUsers" can access certain functions.
+- A function to transfer tokens between users that can only be accessed by "authorizedUsers".
+- A function to retrieve the list of "authorizedUsers". </small>
 
-## Problem :
+## Problem 28: Immutable Variable
 
-<small>Description: </small>
+<small>Description: Fix the code. Change the immutable variables value. But it cannot be done within a "setter" function. </small>
 
-## Problem :
+## Problem 29: String Length
 
-<small>Description: </small>
+<small>Description: Create a function that takes a string as the input, and returns the length of the string. </small>
 
-## Problem :
+## Problem 30: String Compare
 
-<small>Description: </small>
+<small>Description: Write a function that compares strings. NOTE: Solidity doesn't have direct comparison so you will need to convert the strings to something solidity does understand in order to get the correct answer.</small>
 
-## Problem :
+## Problem 31: Unchecked Math
 
-<small>Description: </small>
+<small>Description: Overflow and underflow of numbers in Solidity 0.8 throw an error. This can be disabled using a keyword. It is typically used in cases where the developer knows that the arithmetic operation will not result in overflow or underflow, and wants to optimize the gas cost of the operation by avoiding the checks. Your task is to modify the code to avoid overflow/underflow by using a keyword.
+</small>
+
+## Problem 32: String Concatenate
+
+<small>Description: Concatenation of string in solidity can't be done simply by doing str1 + str2. We must use a special function to achieve this.</small>
+
+## Problem 33: Supply Chain
+
+<small>Description: The problem is to create a smart contract in Solidity that manages a simple supply chain. The contract should allow users to register new products with a name and a unique ID, transfer products from one user to another, and retrieve the current owner of a product.</small>
+
+## Problem 34: Crowd Funding
+
+<small>Description: Create a Solidity contract called Crowdfunding that allows users to donate funds to a project and tracks the total amount raised. Ensure that only the owner can withdrawFunds</small>
+
+## Problem 35: Gas Optimization
+
+<small>Description: We're given a function definition for sumIfEvenAndLessThan99 which goes through the nums array and adds a num to the variable total if it's even and less than 99. However, the way it's implemented is not gas efficient. Modify the sumIfEvenAndLessThan99 function and optimize the code.</small>
+
+## Problem 36: Simple Hash Two
+
+<small>Description: Write a hashing algorithm that will take in a value and hash it with the built-in solidity hashing function ripemd160.</small>
+
+## Problem 37: Data Storage Service
+
+<small>Description: You are building a smart contract that allows users to store and retrieve data on a decentralized network. You want to make it easy for users to store data by allowing them to simply send ether to the contract address along with their data. You also want to make it easy for users to retrieve their data by allowing them to call a getData function on the contract.</small>
+
+## Problem 38: Employee Payroll
+
+<small>Description: A company wants to implement a smart contract that facilitates weekly wage payments to its employees. The company wants to automate the payment process, so the employees receive their wages each week without requiring manual intervention. The contract needs to be secure, transparent, and auditable.
+
+The company needs to be able to add funds to the contract and specify the amount to be paid to each employee each week. The contract should maintain a record of all payments made to each employee and ensure that no employee can be paid more than their designated weekly amount. In addition, the contract should allow employees to withdraw their wages at any time.
+
+The contract should be designed in such a way that it can handle a large number of employees and payments without any performance issues. The contract should also be flexible enough to allow the company to add or remove employees and adjust the payment amounts as needed.
+
+Overall, the company wants a smart contract that can automate the wage payment process, increase transparency, and reduce the risk of errors or fraud.</small>
+
+## Problem 39: Contract Expiration
+
+<small>Description: Create a Solidity smart contract that can check whether it has expired or not based on a specific duration of time. Set the creationTime to the current block timestamp. In the onTime() function set the expirationTime to 1 day after the creationTime. In the expire function set the expirationTime 1 day before the creationTime.</small>
+
+## Problem 40: Bytecode One
+
+<small>Description: The contract should have a function called getBytecode that returns the bytecode of the contract in which the function is defined. The bytecode should be returned as a bytes array. You should complete the code using inline assembly in Solidity. The inline assembly code should use the extcodecopy opcode to copy the bytecode of the contract to a dynamically allocated bytes array. The code should also ensure that the length of the bytes array matches the length of the bytecode.</small>
+
+## Problem 41: Bytecode Two
+
+<small>Description: This is a varition to Bytecode One. In addition to returning the bytecode of the contract like in Bytecode One, we also want to initiliaze the bytes array with a header, followed by the contract address size and the extcodesize. We want to use the shl() function to generate the contract's address and prepend it to the bytecode. In Bytecode One, the byecode array only contained the bytecode itself, without the header or metadata. In this version, we want the bytecode array to contain additional metadata, including the header and the sizes of the contract address and bytecode.</small>
+
+## Problem 42: Reverse String
+
+<small>Description: Here we have two functions, setMessage and reverseMessage. Your job is to ensure \_newMessage is not an empty string and then initialize message. Your next task is to reverse the string message.</small>
+
+## Problem 43: Lottery
+
+<small>Description: The problem is to create a Solidity smart contract to manage a simple lottery. The contract should allow users to buy a ticket with a unique ID, and the contract should be able to draw a winner randomly from all the purchased tickets. The tickets variables holds all the tickets. The ticketCount represents how amny tickets have been purchased. The winner is the address of the winner of the lottery.</small>
