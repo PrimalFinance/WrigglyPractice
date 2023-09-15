@@ -2,6 +2,8 @@
 
 ## Problem 1: Hello World
 
+Description: Return a string that says "Hello World".
+
 ## Problem 2: Sum of Two Integers
 
 ## Problem 3: Add Item to Inventory
