@@ -57,6 +57,7 @@ contract Lottery {
 
     function getWinner() public view returns (address) {
         // TODO: Require there has been a winner and return the winner
+        // Check that the "winner" address has been set to a non-zero address.
         require(winner != address(0), "Please implement drawWinner");
         return winner;
     }
